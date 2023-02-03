@@ -2,9 +2,10 @@ version: '3.1'
 services:
   onenholiday:
     build:
+      #当前目录
       context: ./
       dockerfile: Dockerfile
     image: open-holiday:v1.0.0
-    container_name: onpen-holiday
+    container_name: open-holiday
     ports:
-    - 8083:8083
+      - 8083:8083
